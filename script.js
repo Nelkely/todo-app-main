@@ -56,3 +56,53 @@ function crossed(checkElem) {
   }
 }
 
+const body = document.querySelector("body");
+const moon = document.querySelector(".moon");
+if (moon) {
+  moon.addEventListener("click", () => {
+    toggleDarkMode();
+  });
+}
+function toggleDarkMode() {
+  if (body) {
+    body.classList.toggle("dark-mode");
+  }
+  const todoContent = document.querySelector(".todo-content");
+  if (todoContent) {
+    todoContent.classList.toggle("dark-mode");
+  }
+  const todoCheck = document.querySelectorAll(".todo-check");
+  todoCheck.forEach((check) => {
+    check.classList.toggle("dark-mode");
+  });
+  const todoTextContent = document.querySelectorAll(".todo-text-content");
+  todoTextContent.forEach((text) => {
+    text.classList.toggle("dark-mode");
+  });
+  const todoLink = document.querySelector(".todo-link");
+  if (todoLink) {
+    todoLink.classList.toggle("dark-mode");
+  }
+  const heading = document.querySelector(".heading");
+  if (heading) {
+    heading.classList.toggle("dark-mode");
+  }
+  const todoList = document.querySelector(".todo-lists");
+  if (todoList) {
+    todoList.classList.toggle("dark-mode");
+  }
+  const items = document.querySelectorAll(".adding-todo-page");
+  items.forEach((item) => {
+    item.classList.toggle("dark-mode");
+  });
+  const addingTodo = document.querySelector(".adding-todo");
+  if (addingTodo) {
+    addingTodo.classList.toggle("dark-mode");
+  }
+  const moon = document.querySelector(".moon");
+  if (moon.src.includes("icon-moon.svg")) {
+    moon.src = "./images/icon-sun.svg";
+  } else {
+    moon.src = "./images/icon-moon.svg";
+  }
+}

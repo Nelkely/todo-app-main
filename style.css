@@ -43,6 +43,7 @@ body {
   width: 100%;
   height: 100%;
   border: none;
+  background-color: transparent;
 }
 .adding-todo-page {
   display: grid;
@@ -91,4 +92,32 @@ body {
 }
 .todo-text-content.crossed {
   text-decoration: line-through;
+}
+body.dark-mode {
+  background-color: hsl(235, 21%, 11%);
+}
+.todo-text-content.dark-mode {
+  color: hsl(234, 39%, 85%);
+}
+.todo-content.dark-mode {
+  background-color: hsl(235, 21%, 11%);
+}
+.adding-todo-page.dark-mode {
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 39%, 85%);
+}
+.todo-link.dark-mode {
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+}
+.heading.dark-mode {
+  color: white;
+}
+.todo-lists.dark-mode {
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+}
+.adding-todo.dark-mode {
+  background-color: hsl(235, 24%, 19%);
+  color: white;
 }
