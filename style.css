@@ -83,6 +83,12 @@ body {
   font-weight: bolder;
   cursor: pointer;
 }
-.todo-content{
-    border-radius: 10px;
+.todo-content {
+  border-radius: 10px;
+}
+.todo-check.checked {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.todo-text-content.crossed {
+  text-decoration: line-through;
 }
