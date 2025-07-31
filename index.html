@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="bg-img"></div>
+    <div class="container">
+      <div class="heading">
+        <h1>TODO</h1>
+        <img src="./images/icon-moon.svg" alt="moon" />
+      </div>
+      <div class="adding-todo">
+        <div class="todo-check">
+          <img src="./images/icon-check.svg" alt="check" />
+        </div>
+        <input
+          type="text"
+          class="todo-typing"
+          placeholder="Create a new todo"
+        />
+      </div>
+      <div class="todo-lists">
+        <div class="todo-content">
+          <div class="adding-todo-page">
+            <div class="todo-check">
+              <img src="./images/icon-check.svg" alt="check" />
+            </div>
+            <div class="todo-textcontent">
+              <s>Complete online java script course</s>
+            </div>
+            <img src="./images/icon-cross.svg" alt="delete" />
+          </div>
+          <div class="adding-todo-page">
+            <div class="todo-check">
+              <img src="./images/icon-check.svg" alt="check" />
+            </div>
+            <div class="todo-textcontent">
+              Jog around the park 3X
+            </div>
+            <img src="./images/icon-cross.svg" alt="delete" />
+          </div>
+        </div>
+        <div class="todo-options">
+          <p>5 items left</p>
+          <p>Clear Completed</p>
+        </div>
+      </div>
+      <div class="todo-link">
+        <div class="option">All</div>
+        <div class="option">Active</div>
+        <div class="option">Completed</div>
+      </div>
+    </div>
+  </body>
 </html>
